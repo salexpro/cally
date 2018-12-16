@@ -1,0 +1,24 @@
+extends ../_layout
+
+block const
+    - const page = 'hero'
+
+block content
+    section.hero
+        h1
+            | Cally — личный помощник
+            br
+            | в планировании встреч
+        p.lead
+            | Подключите Cally к своему календарю, делитесь персональной
+            br
+            | ссылкой чтобы люди бронировали встречи с вами
+        form.form
+            h3.form_header
+                | Узнать первым о запуске
+            .form_inner
+                .form_input
+                    input(type="email" placeholder="Ваш email…")
+                .form_input
+                    button.button.primary(type="submit")
+                        | Подписаться

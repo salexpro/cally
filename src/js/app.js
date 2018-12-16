@@ -1,0 +1,3 @@
+const inputs = document.querySelector('[type="text"], [type="password"], [type="date"], [type="datetime"], [type="datetime-local"], [type="month"], [type="week"], [type="email"], [type="number"], [type="search"], [type="tel"], [type="time"], [type="url"], [type="color"], textarea');
+inputs.addEventListener('focus', function() {this.parentNode.classList.add('is_focused')})
+inputs.addEventListener('blur', function() {this.parentNode.classList.remove('is_focused')})
