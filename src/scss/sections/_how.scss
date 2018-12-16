@@ -1,0 +1,84 @@
+$step_icons: (
+    gear: (53px, 59px),
+    chain: (68px, 75px),
+    calendar: (82px, 88px)
+);
+.how{
+    &_steps{
+        display: flex;
+    }
+    &_step{
+        position: relative;
+        width: calc(33.33% - 20px);
+        margin-right: 45px;
+        background: $white;
+        box-shadow: 0 8px 25px rgba(233, 233, 233, 0.5);
+        border-radius: 10px;
+        padding: 20px 40px 30px 20px;
+        @each $icon, $sizes in $step_icons{
+            &--#{$icon}{
+                .how_step_header::after{
+                    width: nth($sizes, 1);
+                    height: nth($sizes, 2);
+                    background-image: url(/assets/img/steps/#{$icon}@2x.png);
+                }
+            }
+        }
+        &--gear{
+            .how_step_header::after{
+                right: -6px;
+            }
+        }
+        &:last-child{
+            border: 0;
+            margin: 0;
+            &::before, &::after{
+                display: none;
+            }
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            transform: rotate(-25deg);
+            top: calc(50% - 30px);
+            left: calc(100% - 44px);
+            z-index: -3;
+            width: 60px;
+            height: 60px;
+            box-shadow: 0 8px 25px rgba(233,233,233,0.5);
+            border-radius: 50%;
+        }
+        &::after{         
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 100%;
+            transform: translateY(-50%);
+            border: 45px solid $white;
+            border-left-width: 20px;
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+            border-right: 0;
+        }
+        &_header{
+            position: static;
+            &::after{
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 50%;
+                height: 50%;
+                background-repeat: no-repeat;
+                background-position: right top;
+                z-index: 1;
+                background-size: cover;
+            }
+        }
+        &_descr{
+            margin: 0;
+            position: relative;
+            z-index: 2;
+        }
+    }
+}

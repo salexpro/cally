@@ -1,0 +1,33 @@
+extends ../_layout
+
+block const
+    - const page = 'how'
+
+block content
+    mixin step(header, descr, icon)
+        .how_step(class=`how_step--${icon}`)
+            h3.how_step_header
+                =header
+            p.how_step_descr
+                =descr
+
+    section.how
+        h2
+            | Как это работает?
+        .how_steps
+            +step(
+                'Настройка',
+                'Настройте Ваши предпочтения доступности, и он сделает всю работу за Вас.',
+                'gear'
+            )
+            +step(
+                'Шеринг',
+                'Приглашайте людей в Ваш календарь через почту или встраивайте ссылку прямо на сайт.',
+                'chain'
+            )
+            +step(
+                'Расписание',
+                'Люди сами выбирают время, а потом вносят его в Ваш календарь. Так, что Вам остается только созвониться =)',
+                'calendar'
+            )
+        include ../components/_form

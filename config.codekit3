@@ -104,13 +104,6 @@
 		"oAP": "/build/assets/favicon/.gitkeep",
 		"oF": 0
 		},
-	"/src/assets/fonts/.gitkeep": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "/build/assets/fonts/.gitkeep",
-		"oF": 0
-		},
 	"/src/assets/fonts/Gilroy/Gilroy-ExtraBold.woff": {
 		"cB": 0,
 		"ft": 8192,
@@ -125,51 +118,88 @@
 		"oAP": "/build/assets/fonts/Gilroy/Gilroy-ExtraBold.woff2",
 		"oF": 0
 		},
-	"/src/assets/img/.gitkeep": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "/build/assets/img/.gitkeep",
-		"oF": 0
-		},
-	"/src/assets/img/bg_right.png": {
-		"ft": 32768,
-		"iS": 56483,
-		"oA": 0,
-		"oAP": "/build/assets/img/bg_right.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/src/assets/img/bg_right@2x.png": {
-		"ft": 32768,
-		"iS": 185295,
-		"oA": 0,
-		"oAP": "/build/assets/img/bg_right@2x.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"/src/assets/img/bg_top_left.png": {
+	"/src/assets/img/bg_hero_left.png": {
 		"ft": 32768,
 		"iS": 20462,
 		"oA": 0,
-		"oAP": "/build/assets/img/bg_top_left.png",
+		"oAP": "/build/assets/img/bg_hero_left.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
-	"/src/assets/img/bg_top_left@2x.png": {
+	"/src/assets/img/bg_hero_left@2x.png": {
 		"ft": 32768,
 		"iS": 65409,
 		"oA": 0,
-		"oAP": "/build/assets/img/bg_top_left@2x.png",
+		"oAP": "/build/assets/img/bg_hero_left@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/bg_hero_right.png": {
+		"ft": 32768,
+		"iS": 56483,
+		"oA": 0,
+		"oAP": "/build/assets/img/bg_hero_right.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/bg_hero_right@2x.png": {
+		"ft": 32768,
+		"iS": 185295,
+		"oA": 0,
+		"oAP": "/build/assets/img/bg_hero_right@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/bg_how_left.png": {
+		"ft": 32768,
+		"iS": 45688,
+		"oA": 0,
+		"oAP": "/build/assets/img/bg_how_left.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/bg_how_left@2x.png": {
+		"ft": 32768,
+		"iS": 145015,
+		"oA": 0,
+		"oAP": "/build/assets/img/bg_how_left@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/bg_how_right.png": {
+		"ft": 32768,
+		"iS": 74109,
+		"oA": 0,
+		"oAP": "/build/assets/img/bg_how_right.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/bg_how_right@2x.png": {
+		"ft": 32768,
+		"iS": 240685,
+		"oA": 0,
+		"oAP": "/build/assets/img/bg_how_right@2x.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -185,6 +215,72 @@
 		"opt": 1,
 		"plM": 1103269715967,
 		"prP": 0
+		},
+	"/src/assets/img/steps/calendar.png": {
+		"ft": 32768,
+		"iS": 9060,
+		"oA": 0,
+		"oAP": "/build/assets/img/steps/calendar.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/steps/calendar@2x.png": {
+		"ft": 32768,
+		"iS": 27173,
+		"oA": 0,
+		"oAP": "/build/assets/img/steps/calendar@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/steps/chain.png": {
+		"ft": 32768,
+		"iS": 5875,
+		"oA": 0,
+		"oAP": "/build/assets/img/steps/chain.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/steps/chain@2x.png": {
+		"ft": 32768,
+		"iS": 18839,
+		"oA": 0,
+		"oAP": "/build/assets/img/steps/chain@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/steps/gear.png": {
+		"ft": 32768,
+		"iS": 7582,
+		"oA": 0,
+		"oAP": "/build/assets/img/steps/gear.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/src/assets/img/steps/gear@2x.png": {
+		"ft": 32768,
+		"iS": 23506,
+		"oA": 0,
+		"oAP": "/build/assets/img/steps/gear@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
 		},
 	"/src/CNAME": {
 		"cB": 0,
@@ -220,6 +316,15 @@
 		"oA": 1,
 		"oAP": "/build/_layout.html",
 		"oF": 1,
+		"oS": 0
+		},
+	"/src/pug/components/_form.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_form.html",
+		"oF": 0,
 		"oS": 0
 		},
 	"/src/pug/components/_head.pug": {
@@ -264,6 +369,15 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "/build/_popup.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/pages/how.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 0,
+		"oAP": "/build/how.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -436,6 +550,19 @@
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
+		},
+	"/src/scss/sections/_how.scss": {
+		"aP": 1,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 1,
+		"oAP": "/build/scss/css/_how.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
 		}
 	},
 "hooks": [
@@ -448,7 +575,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-doge",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 566617160.75284195
+	"lastBuiltDate": 566625397.29334998
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

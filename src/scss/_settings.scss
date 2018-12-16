@@ -147,8 +147,8 @@ $header-styles: (
   ),
   medium: (
     'h1': ('fs': 64),
-    'h2': ('fs': 40),
-    'h3': ('fs': 24, 'mb': 18, 'lh': 1.5),
+    'h2': ('fs': 48),
+    'h3': ('fs': 24, 'mb': 8, 'lh': 1.6),
     'h4': ('fs': 25),
     'h5': ('fs': 20),
     'h6': ('fs': 16),
@@ -437,7 +437,7 @@ $input-background-focus: $white;
 $input-background-disabled: $light-gray;
 $input-border: 0;
 $input-border-focus: 0;
-$input-padding: rem-calc(14 30);
+$input-padding: rem-calc(12.8 30);
 $input-shadow: none;
 $input-shadow-focus: none;
 $input-cursor-disabled: not-allowed;
