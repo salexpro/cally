@@ -16,11 +16,10 @@ doctype html
 html(lang="ru")
     include components/_head
     body
-        main.wrap(class=`wrap--${page}`)
-            .grid-container.wrap_container
-                include sections/_header
-                block content
-                    include sections/_footer
+        main.wrap
+            include sections/_header
+            block content
+                include sections/_footer
             //- include components/_popup
         //- include components/_offcanvas
         block js

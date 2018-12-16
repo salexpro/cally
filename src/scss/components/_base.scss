@@ -7,10 +7,11 @@ html, body{
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
+    background: #827dff;
 }
 ::-webkit-scrollbar-thumb {
-    background: $primary-color;
     border-radius: 5px;
+    background: #5caefe;
     &:hover{
         background: darken($primary-color, 15);
     }
@@ -35,6 +36,7 @@ html, body{
     height: 100%;
     background-repeat: no-repeat;
     background-size: 100% auto;
+    z-index: -1;
 }
 
 .wrap {
@@ -44,8 +46,24 @@ html, body{
     align-items: stretch;
     justify-content: flex-start;
     position: relative;
-    padding-left: 12vw;
-    padding-right: 12vw;
+}
+
+.section{
+    min-height: 100vh;
+    padding: 110px 12vw;
+    padding-bottom: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    @include breakpoint(medium down){
+        padding-left: 7vw;
+        padding-right: 7vw;
+    }
+    @include breakpoint(small down){
+        padding-top: 130px;
+        padding-bottom: 5vh;
+    }
     &--hero{
         &::before{
             @extend %bg_parts;
@@ -58,6 +76,7 @@ html, body{
             right: 0;
             background-image: url(/assets/img/bg_hero_right@2x.png);
             background-position: top right;
+            background-size: contain;
         }
     }
     &--how{
@@ -66,7 +85,7 @@ html, body{
             left: 0;
             top: 5%;
             background-image: url(/assets/img/bg_how_left@2x.png);
-            background-position: bottom right;
+            background-position: bottom left;
             background-size: contain;
             height: 95%;
             max-width: 184px;
@@ -80,13 +99,18 @@ html, body{
             height: 90%;
         }
     }
-    &_container{
-        min-height: 100vh;
-        padding-top: 30px;
-        padding-bottom: 15vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+}
+
+.grid-container{
+    width: 100%;
+}
+
+.lead{
+    @include breakpoint(medium down){
+        font-size: 20px;
+    }
+    @include breakpoint(small down){
+        font-size: 18px;
     }
 }
 

@@ -1,17 +1,12 @@
-extends ../_layout
-
-block const
-    - const page = 'how'
-
-block content
-    mixin step(header, descr, icon)
+mixin step(header, descr, icon)
         .how_step(class=`how_step--${icon}`)
             h3.how_step_header
                 =header
             p.how_step_descr
                 =descr
 
-    section.how
+section.section.section--how.how
+    .grid-container
         h2
             | Как это работает?
         .how_steps

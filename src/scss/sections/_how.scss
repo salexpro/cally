@@ -4,17 +4,37 @@ $step_icons: (
     calendar: (82px, 88px)
 );
 .how{
+    @include breakpoint(small down){
+        padding-top: 5vh;
+    }
     &_steps{
         display: flex;
+        counter-reset: steps;
+        @include breakpoint(medium down){
+            flex-wrap: wrap;
+        }
     }
     &_step{
+        counter-increment: steps;
         position: relative;
         width: calc(33.33% - 20px);
         margin-right: 45px;
         background: $white;
-        box-shadow: 0 8px 25px rgba(233, 233, 233, 0.5);
         border-radius: 10px;
+        box-shadow: 0 8px 25px rgba(233, 233, 233, 0.5);
         padding: 20px 40px 30px 20px;
+        @include breakpoint(medium down){
+            width: calc(50% - 20px);
+            margin-right: 40px;
+            padding-bottom: 20px;
+        }
+        
+        @include breakpoint(small down){
+            width: 100%;
+            margin: 0;
+            padding-right: 25px;
+        }
+        
         @each $icon, $sizes in $step_icons{
             &--#{$icon}{
                 .how_step_header::after{
@@ -29,9 +49,56 @@ $step_icons: (
                 right: -6px;
             }
         }
+
+        &:first-child{
+            @include breakpoint(small down){
+                margin-bottom: 35px;
+                &::before{
+                    transform: rotate(65deg);
+                    top: calc(100% - 44px);
+                    left: calc(50% - 30px);
+                }
+                &::after{
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-right: 45px solid transparent;
+                    border-left: 45px solid transparent;
+                    border-top-width: 20px;
+                    border-top-color: $white;
+                    border-bottom: 0;
+                }
+            }
+        }
+
+        &:nth-child(2){
+            @include breakpoint(medium down){
+                margin: 0;
+                &::before{
+                    transform: rotate(65deg);
+                    top: calc(100% - 44px);
+                    left: calc(50% - 30px);
+                }
+                &::after{
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    border-right: 45px solid transparent;
+                    border-left: 45px solid transparent;
+                    border-top-width: 20px;
+                    border-top-color: $white;
+                    border-bottom: 0;
+                }
+            }
+        }
+
         &:last-child{
             border: 0;
             margin: 0;
+            @include breakpoint(medium down){
+                margin-top: 35px;
+                width: 100%;
+            }
             &::before, &::after{
                 display: none;
             }
@@ -62,6 +129,9 @@ $step_icons: (
         }
         &_header{
             position: static;
+            &::before{
+                content: counter(steps) '. ';
+            }
             &::after{
                 content: '';
                 position: absolute;
@@ -79,6 +149,9 @@ $step_icons: (
             margin: 0;
             position: relative;
             z-index: 2;
+            @include breakpoint(small down){
+                font-size: 16px;
+            }
         }
     }
 }

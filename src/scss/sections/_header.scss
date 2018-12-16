@@ -1,7 +1,27 @@
 .header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5vh;
-    flex: 0 0 auto;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 30px 12vw;
+    z-index: 2;
+    @include breakpoint(medium down){
+        padding: 30px 7vw;
+    }
+    @include breakpoint(small down){
+        padding: 15px 5vw;
+    }
+    &_inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include breakpoint(small down){
+            flex-direction: column;
+        }
+    }
+    &_right{
+        @include breakpoint(small down){
+            margin-top: 20px;
+        }
+    }
 }

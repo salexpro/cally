@@ -372,15 +372,6 @@
 		"oF": 0,
 		"oS": 0
 		},
-	"/src/pug/pages/how.pug": {
-		"cB": 1,
-		"cOD": 0,
-		"ft": 512,
-		"oA": 0,
-		"oAP": "/build/how.html",
-		"oF": 0,
-		"oS": 0
-		},
 	"/src/pug/pages/index.pug": {
 		"cB": 1,
 		"cOD": 0,
@@ -405,6 +396,24 @@
 		"ft": 512,
 		"oA": 1,
 		"oAP": "/build/_header.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_hero.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_hero.html",
+		"oF": 0,
+		"oS": 0
+		},
+	"/src/pug/sections/_how.pug": {
+		"cB": 1,
+		"cOD": 0,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "/build/_how.html",
 		"oF": 0,
 		"oS": 0
 		},
@@ -575,7 +584,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "meme-doge",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 566625397.29334998
+	"lastBuiltDate": 566690320.54840004
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
